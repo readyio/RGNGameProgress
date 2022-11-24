@@ -1,0 +1,33 @@
+{
+  "name": "io.getready.rgn.gameprogress",
+  "displayName": "Ready Games Network SDK. Game Progress",
+  "version": "0.0.12",
+  "unity": "2020.3",
+  "description": "The Ready Games Network (RGN) is building mobile-first Web3 tools and technologies to democratize access to game creation.",
+  "author": {
+      "name": "Ready Games",
+      "email": "contact@ready.gg",
+      "url": "https://ready.gg/"
+  },
+  "keywords": [
+      "web3",
+      "mobile",
+      "games",
+      "ready",
+      "unity"
+  ],
+  "category": "Unity",
+  "files": [
+      "/README.md",
+      "/README.md.meta",
+      "/package.json",
+      "/package.json.meta",
+      "/ReadyGamesNetwork",
+      "/ReadyGamesNetwork.meta"
+  ],
+  "dependencies": {
+    "io.getready.rgn.core": "0.0.12",
+    "io.getready.rgn.achievement": "0.0.12",
+    "io.getready.rgn.currency": "0.0.12"
+ }
+}
