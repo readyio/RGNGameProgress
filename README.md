@@ -1,2 +1,2 @@
 # RGN GameProgress
-version: 0.1.0-dev.123
+version: 0.1.0-dev.124
