@@ -23,7 +23,17 @@
     "/package.json",
     "/package.json.meta",
     "/ReadyGamesNetwork",
-    "/ReadyGamesNetwork.meta"
+    "/ReadyGamesNetwork.meta",
+    "/Samples",
+    "/Samples.meta",
+    "/Samples~"
+  ],
+  "samples": [
+    {
+      "displayName": "Game Progress Example",
+      "description": "Contains prefab and scene to view user level and custom game data attached to the user profile.",
+      "path": "Samples~/GameProgressExample"
+    }
   ],
   "dependencies": {
     "io.getready.rgn.achievement": "0.1.0",
