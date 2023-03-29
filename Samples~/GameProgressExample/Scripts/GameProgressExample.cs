@@ -48,14 +48,20 @@ namespace RGN.Samples
             _levelUpButton.Button.onClick.RemoveListener(OnLevelUpButtonClickAsync);
             _storeInUserDataButton.Button.onClick.RemoveListener(OnStoreInUserDataButtonClickAsync);
         }
-
         protected override async void OnShow()
         {
             if (_triedToLoad)
             {
                 return;
             }
+            _triedToLoad = true;
             await LoadDataAsync();
+        }
+
+        public async Task<int> GetUserLevelAsync()
+        {
+            var result = await GameProgressModule.I.GetGameProgressAsync();
+            return result.level;
         }
 
         private void SetUIInteractable(bool interactable)
