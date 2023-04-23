@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RGNGameProgress</name>
+    </assembly>
+    <members>
+        <member name="T:RGN.Modules.GameProgress.GameProgressModule">
+            <summary>
+            Is responsible to store custom data attached to users account
+            Provides functionality for user levels.
+            </summary>
+        </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.OnGameCompleteAsync(System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
+            <summary>
+            Level ups the current logged in user and gives user rewards
+            by adding custom currencies to the user profile.
+            Adding "rgn-coin" currency is not allowed by using this method
+            </summary>
+            <param name="reward"></param>
+            <returns>User current level and currencies information</returns>
+        </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetGameProgressAsync">
+            <summary>
+            Gets the current user level.
+            </summary>
+            <returns>User level</returns>
+        </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.UpdateUserProgressAsync``1(``0,System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
+            <summary>
+            Attaches custom serializable data to the current logged in user account
+            You can store game specific arbitrary data attached to the user.
+            This method allows to give also coin rewards by providing non empty reward List.
+            It is not allowed to give "rgn-coin" as a reward using this method.
+            </summary>
+            <typeparam name="T">Serializable game specific data type</typeparam>
+            <param name="userProgress">The actual data instance related to the logged in user</param>
+            <param name="reward">Array of custom game currencies to add to the user profile</param>
+            <returns>Actual user progress data</returns>
+        </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetUserProgressAsync``1">
+            <summary>
+            Gets last attached user progress data. The data can contain custom
+            game specific serializable data attached to the current logged in user account
+            </summary>
+            <typeparam name="T">Serializable game specific data type</typeparam>
+            <returns>Actual user progress data</returns>
+        </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetUserProgressionDataAsync``1">
+            <summary>
+            Gets user progression data. The data can contain custom
+            game specific fields. E.g.xp, score, stars, etc.
+            Those fields are updated by the achievements module in case the
+            achievement contains the "progressionRewards" field.
+            </summary>
+            <typeparam name="T">Serializable user progression data type</typeparam>
+            <returns>Actual user progression data instance</returns>
+        </member>
+    </members>
+</doc>
