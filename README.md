@@ -1,2 +1,2 @@
 # RGN GameProgress
-Package version: 0.3.0-dev.252
+Package version: 0.4.0
