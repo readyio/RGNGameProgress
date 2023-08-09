@@ -10,24 +10,6 @@
             Provides functionality for user levels.
             </summary>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.SetRGNCore(RGN.IRGNRolesCore)">
-            <summary>
-            Sets the Ready Games Network (RGN) core reference.
-            </summary>
-            <param name="rgnCore">The RGN core to be set.</param>
-        </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.Init">
-            <summary>
-            Initializes the GameProgressModule.
-            This method is currently empty and can be filled with initial setup logic if needed in the future.
-            </summary>
-        </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.Dispose">
-            <summary>
-            Releases all resources used by the GameProgressModule.
-            This method is currently empty and can be filled with cleanup logic if needed in the future.
-            </summary>
-        </member>
         <member name="M:RGN.Modules.GameProgress.GameProgressModule.OnGameCompleteAsync(System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
             <summary>
             Level ups the current logged in user and gives user rewards
