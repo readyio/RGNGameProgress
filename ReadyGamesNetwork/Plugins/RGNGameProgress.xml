@@ -45,15 +45,5 @@
             <typeparam name="T">Serializable game specific data type</typeparam>
             <returns>Actual user progress data</returns>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetUserProgressionDataAsync``1">
-            <summary>
-            Gets user progression data. The data can contain custom
-            game specific fields. E.g.xp, score, stars, etc.
-            Those fields are updated by the achievements module in case the
-            achievement contains the "progressionRewards" field.
-            </summary>
-            <typeparam name="T">Serializable user progression data type</typeparam>
-            <returns>Actual user progression data instance</returns>
-        </member>
     </members>
 </doc>
