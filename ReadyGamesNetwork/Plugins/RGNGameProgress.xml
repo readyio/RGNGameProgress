@@ -25,6 +25,15 @@
             </summary>
             <returns>User level</returns>
         </member>
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.AddUserProgressAsync``1(``0)">
+            <summary>
+            Attaches custom serializable data to the current logged in user account
+            You can store game specific arbitrary data attached to the user.
+            </summary>
+            <typeparam name="T">Serializable game specific data type</typeparam>
+            <param name="userProgress">The actual data instance related to the logged in user</param>
+            <returns>Actual user progress data</returns>
+        </member>
         <member name="M:RGN.Modules.GameProgress.GameProgressModule.UpdateUserProgressAsync``1(``0,System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
             <summary>
             Attaches custom serializable data to the current logged in user account
