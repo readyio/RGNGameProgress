@@ -31,7 +31,7 @@
             You can store game specific arbitrary data attached to the user.
             </summary>
             <typeparam name="T">Serializable game specific data type</typeparam>
-            <param name="userProgress">The actual data instance related to the logged in user</param>
+            <param name="userProgressJson">The actual data instance related to the logged in user</param>
             <returns>Actual user progress data</returns>
         </member>
         <member name="M:RGN.Modules.GameProgress.GameProgressModule.UpdateUserProgressAsync``1(``0,System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
@@ -42,7 +42,7 @@
             It is not allowed to give "rgn-coin" as a reward using this method.
             </summary>
             <typeparam name="T">Serializable game specific data type</typeparam>
-            <param name="userProgress">The actual data instance related to the logged in user</param>
+            <param name="userProgressJson">The actual data instance related to the logged in user</param>
             <param name="reward">Array of custom game currencies to add to the user profile</param>
             <returns>Actual user progress data</returns>
         </member>
