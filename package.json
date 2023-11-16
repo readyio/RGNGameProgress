@@ -36,8 +36,8 @@
     }
   ],
   "dependencies": {
-    "io.getready.rgn.achievement": "0.8.0",
     "io.getready.rgn.core": "0.8.0",
-    "io.getready.rgn.userprofile": "0.8.0"
+    "io.getready.rgn.userprofile": "0.8.0",
+    "io.getready.rgn.currency": "0.8.0"
   }
 }
