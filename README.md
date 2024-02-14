@@ -1,2 +1,2 @@
 # RGN GameProgress
-Package version: 0.9.0-dev.485
+Package version: 0.9.0-dev.486
