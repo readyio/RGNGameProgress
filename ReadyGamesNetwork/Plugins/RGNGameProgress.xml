@@ -6,7 +6,7 @@
     <members>
         <member name="T:RGN.Modules.GameProgress.GameProgressModule">
             <summary>
-            Is responsible to store custom data attached to users account
+            This module is responsible to store custom data attached to users account
             Provides functionality for user levels.
             </summary>
         </member>
