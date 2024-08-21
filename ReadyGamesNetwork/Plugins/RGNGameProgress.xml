@@ -10,31 +10,34 @@
             Provides functionality for user levels.
             </summary>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.OnGameCompleteAsync(System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.OnGameCompleteAsync(System.Collections.Generic.List{RGN.Modules.Currency.Currency},System.Threading.CancellationToken)">
             <summary>
             Level ups the current logged in user and gives user rewards
             by adding custom currencies to the user profile.
             Adding "rgn-coin" currency is not allowed by using this method
             </summary>
             <param name="reward"></param>
+            <param name="cancellationToken">A token to cancel the operation.</param>
             <returns>User current level and currencies information</returns>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetGameProgressAsync">
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetGameProgressAsync(System.Threading.CancellationToken)">
             <summary>
             Gets the current user level.
             </summary>
+            <param name="cancellationToken">A token to cancel the operation.</param>
             <returns>User level</returns>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.AddUserProgressAsync``1(``0)">
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.AddUserProgressAsync``1(``0,System.Threading.CancellationToken)">
             <summary>
             Attaches custom serializable data to the current logged in user account
             You can store game specific arbitrary data attached to the user.
             </summary>
             <typeparam name="T">Serializable game specific data type</typeparam>
             <param name="userProgressJson">The actual data instance related to the logged in user</param>
+            <param name="cancellationToken">A token to cancel the operation.</param>
             <returns>Actual user progress data</returns>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.UpdateUserProgressAsync``1(``0,System.Collections.Generic.List{RGN.Modules.Currency.Currency})">
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.UpdateUserProgressAsync``1(``0,System.Collections.Generic.List{RGN.Modules.Currency.Currency},System.Threading.CancellationToken)">
             <summary>
             Attaches custom serializable data to the current logged in user account
             You can store game specific arbitrary data attached to the user.
@@ -44,14 +47,16 @@
             <typeparam name="T">Serializable game specific data type</typeparam>
             <param name="userProgressJson">The actual data instance related to the logged in user</param>
             <param name="reward">Array of custom game currencies to add to the user profile</param>
+            <param name="cancellationToken">A token to cancel the operation.</param>
             <returns>Actual user progress data</returns>
         </member>
-        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetUserProgressAsync``1">
+        <member name="M:RGN.Modules.GameProgress.GameProgressModule.GetUserProgressAsync``1(System.Threading.CancellationToken)">
             <summary>
             Gets last attached user progress data. The data can contain custom
             game specific serializable data attached to the current logged in user account
             </summary>
             <typeparam name="T">Serializable game specific data type</typeparam>
+            <param name="cancellationToken">A token to cancel the operation.</param>
             <returns>Actual user progress data</returns>
         </member>
     </members>
